@@ -23,8 +23,10 @@ class CycleCarouselPageExtension extends DataExtension{
 
 	public function updateCMSFields(FieldList $fields) {
 
-		$config = GridFieldConfig_RelationEditor::create(5);
-		$config->addComponent(GridFieldOrderableRows::create('SortOrder'));
+		$config = GridFieldConfig_RelationEditor::create(10);
+
+
+		$config->addComponent(new GridFieldSortableRows('SortOrder'));
 
 		$fields->addFieldToTab('Root.CycleCarouselItems',
 			GridField::create('CycleCarouselItems',
@@ -35,7 +37,7 @@ class CycleCarouselPageExtension extends DataExtension{
 		);
 	}
 
-	public function sortedCycleCarouselItems(){
+	public function CycleCarouselItems(){
 		return $this->owner->getManyManyComponents("CycleCarouselItems")->sort("SortOrder");
 	}
 }
@@ -50,7 +52,7 @@ class CycleCarouselPage_ControllerExtension extends Extension {
 
 	public function CycleCarouselObject(){
 
-		$slides = $this->owner->sortedCycleCarouselItems();
+		$slides = $this->owner->CycleCarouselItems();
 
 		if($slides->exists()){
 			$data = new ArrayData(

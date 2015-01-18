@@ -13,3 +13,23 @@
 		<% end_if %>
 	<% end_loop %>
 </div>
+
+
+
+	<div class="item">
+		<div class="caption-container" style="background-image: url('{$ThemeDir}/images/sample05.png'); background-size:cover;">
+			<div class="playbutton" data-youtubelink="http://www.youtube.com/embed/YJFz7oGW1ro?autoplay=1&enablejsapi=1&&version=3&playerapiid=ytplayer"></div>
+			<div class="caption-text"><p>Managing director Andrew Holliday on the future of banking solutions</p></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="caption-container" style="background-image: url('{$ThemeDir}/images/sample06.png'); background-size:cover;">
+			<div class="caption-text"><p>Managing director Andrew Holliday on the future of banking solutions</p></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="caption-container" style="background-image: url('{$ThemeDir}/images/sample04.png'); background-size:cover;">
+			<div class="playbutton" data-youtubelink="http://www.youtube.com/embed/ZXKDJbT802Y?autoplay=1&enablejsapi=1&&version=3&playerapiid=ytplayer"></div>
+			<div class="caption-text"><p>Managing director Andrew Holliday on the future of banking solutions</p></div>
+		</div>
+	</div>

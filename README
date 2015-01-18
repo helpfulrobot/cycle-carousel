@@ -14,10 +14,13 @@ You can also use composer to add this module to your project using the following
 
 composer require "skTzoooTech/cycle-carousel:*"
 
-But before adding the above module make sure you add sktzoootech/link-field:
+But before adding the above module make sure you add sktzoootech/link-field and other modules (Please see composer.json for all dependecy):
 
 composer require "skTzoooTech/link-field:*"
 
+composer require "ajshort/silverstripe-gridfieldextensions:*"
+
+composer require "undefinedoffset/sortablegridfield:*"
 
 ## How to use the module
 
